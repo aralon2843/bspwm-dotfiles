@@ -1,13 +1,13 @@
 # What I need to do after installing Arch Linux:
   ## Setting up Wi-Fi:
     $ sudo pacman -S wpa_supplicant netctl dhdpcd dialog ppp 
-    $ wifi-menu,
+    $ wifi-menu
     $ ip link set wlp7s0 down
     $ netctl start wlp7s0-network_name
     $ wpa_cli status
     
   ## Install xorg, wm and other stuff:
-    pacman -S xorg xorg-xinit xorg-server bspwm sxhkd polybar ttf-jetbrains-mono alacritty nvim picom git pavucontrol pulseaudio sxiv rofi ranger
+    pacman -S xorg xorg-xinit xorg-server bspwm sxhkd polybar ttf-jetbrains-mono alacritty nvim picom git pavucontrol pulseaudio sxiv rofi ranger feh lxappearance
 
   ## Add sxhkd & exec bspwm to  ~/.xinitrc or install dm like sddm, don't forget to enable dm service 
 
@@ -45,3 +45,4 @@
     $ yay -S vibrant-cli
     $ vibrant-cli HDMI-1 1.45
     $ vibrant-cli DP-2 1.45
+  
