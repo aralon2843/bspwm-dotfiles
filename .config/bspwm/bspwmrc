@@ -1,0 +1,29 @@
+#! /bin/sh
+$HOME/.config/polybar/launch.sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor HDMI-1 -d I III 
+bspc monitor DP-2 -d II IV
+
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
+
+bspc config focused_border_color "#FF7F50"
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+setxkbmap -option grp:alt_shift_toggle us,ru
+feh --bg-fill ~/backgrounds/background.jpg
+xrandr --output HDMI-1 --auto --right-of DP-2
+vibrant-cli HDMI-1 1.45
+vibrant-cli DP-2 1.45
+picom
