@@ -7,7 +7,7 @@
     $ wpa_cli status
     
   ## Install xorg, wm and other stuff:
-    pacman -S xorg xorg-xinit xorg-server bspwm sxhkd polybar ttf-jetbrains-mono alacritty nvim picom git pavucontrol pulseaudio sxiv rofi ranger feh lxappearance
+    pacman -S xorg xorg-xinit xorg-server bspwm sxhkd polybar ttf-jetbrains-mono alacritty nvim picom git pavucontrol pulseaudio sxiv rofi ranger feh lxappearance xfce4-screenshooter
 
   ## Add sxhkd & exec bspwm to  ~/.xinitrc or install dm like sddm, don't forget to enable dm service 
 
