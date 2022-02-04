@@ -46,3 +46,5 @@
     $ vibrant-cli HDMI-1 1.45
     $ vibrant-cli DP-2 1.45
   
+  ## Making fonts better:
+    Everything is well explained in this article - https://wiki.manjaro.org/index.php?title=Improve_Font_Rendering
